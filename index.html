@@ -6,8 +6,108 @@
     <meta name="theme-color" content="#000000" />
     <title>Prism Picker API</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/1.35.0/iconfont/tabler-icons.min.css"
+      integrity="sha512-tpsEzNMLQS7w9imFSjbEOHdZav3/aObSESAL1y5jyJDoICFF2YwEdAHOPdOr1t+h8hTzar0flphxR76pd0V1zQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <h1>Prism Picker API</h1>
+    <p>Random colors, convert colors, create color/gradient images and more!</p>
+    <button><a href="">docs</a></button>
+    <a
+      href="https://www.github.com/dogukanurker/prismpickerapi"
+      id="github"
+      target="_blank"
+    >
+      <i class="ti ti-brand-github"></i>
+    </a>
+    <h2>API</h2>
+
+    <section>
+      <h3>Converters</h3>
+      <h4>Hex to RGB</h4>
+      <code>
+        <pre>/convert/hex/rgb/{hexCode}</pre>
+      </code>
+      <h4>Hex to RGBA</h4>
+      <code>
+        <pre>/convert/hex/rgba/{hexCode}/{alpha}</pre>
+      </code>
+      <h4>RGB to Hex</h4>
+      <code>
+        <pre>/convert/rgb/hex/{r}/{g}/{b}</pre>
+      </code>
+      <h4>RGB to RGBA</h4>
+      <code>
+        <pre>/convert/rgb/rgba/{r}/{g}/{b}/{alpha}</pre>
+      </code>
+      <h4>RGBA to RGB</h4>
+      <code>
+        <pre>/convert/rgba/rgb/{r}/{g}/{b}</pre>
+      </code>
+      <h4>RGBA to Hex</h4>
+      <code>
+        <pre>/convert/rgba/hex/{r}/{g}/{b}/{alpha}</pre>
+      </code>
+    </section>
+
+    <section>
+      <h3>Random</h3>
+      <h4>Color</h4>
+      <code>
+        <pre>/random</pre>
+      </code>
+      <h4>Hex</h4>
+      <code>
+        <pre>/random/hex</pre>
+      </code>
+      <h4>RGB</h4>
+      <code>
+        <pre>/random/rgb</pre>
+      </code>
+      <h4>RGBA</h4>
+      <code>
+        <pre>/random/rgba</pre>
+      </code>
+      <h4>Color multiple</h4>
+      <code>
+        <pre>/random/{count}</pre>
+      </code>
+      <h4>Hex multiple</h4>
+      <code>
+        <pre>/random/hex/{count}</pre>
+      </code>
+      <h4>RGB multiple</h4>
+      <code>
+        <pre>/random/rgb/{count}</pre>
+      </code>
+      <h4>RGBA multiple</h4>
+      <code>
+        <pre>/random/rgba/{count}</pre>
+      </code>
+    </section>
+
+    <section><h3>Mixer</h3></section>
+
+    <section>
+      <h3>Tailwind</h3>
+    </section>
+
+    <section>
+      <h3>Material</h3>
+    </section>
+
+    <section>
+      <h3>Image</h3>
+    </section>
+
+    <section>
+      <h3>Gradient</h3>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

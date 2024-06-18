@@ -5,20 +5,25 @@ h1 {
 }
 h2 {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2.5rem;
+  padding-top: 0.5rem;
   text-align: center;
-}
-h3 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
 }
 h4 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
+i {
+  font-size: 4rem;
+}
+div {
+  user-select: none !important;
+  width: fit-content;
+  margin: 1rem auto;
+}
 body {
   margin: auto;
-  width: 70%;
+  width: 60%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -56,11 +61,19 @@ p {
   font-size: 3rem;
   transition: all 0.3s;
 }
-
+img {
+  border-radius: 0.5rem;
+}
 #github:hover {
   transform: scale(1.1);
 }
-
+.outputArrow {
+  font-size: 2rem !important;
+}
+.output {
+  margin: auto;
+  margin-bottom: 5rem;
+}
 @media screen and (max-width: 768px) {
   body {
     width: 96%;
@@ -76,9 +89,6 @@ p {
   }
   h2 {
     font-size: 2rem;
-  }
-  h3 {
-    font-size: 1.5rem;
   }
   h4 {
     font-size: 1.2rem;

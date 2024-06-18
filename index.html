@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Prism Picker API</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -14,10 +14,10 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
     <h1>Prism Picker API</h1>
     <p>Random colors, convert colors, create color/gradient images and more!</p>
-    <button><a href="">docs</a></button>
     <a
       href="https://www.github.com/dogukanurker/prismpickerapi"
       id="github"
@@ -25,88 +25,795 @@
     >
       <i class="ti ti-brand-github"></i>
     </a>
-    <h2>API</h2>
-
     <section>
-      <h3>Converters</h3>
+      <h2>Converters</h2>
       <h4>Hex to RGB</h4>
       <code>
         <pre>/convert/hex/rgb/{hexCode}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "rgb": [
+              0,
+              0,
+              0
+          ]
+}</pre
+        >
       </code>
       <h4>Hex to RGBA</h4>
       <code>
         <pre>/convert/hex/rgba/{hexCode}/{alpha}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "rgba": [
+              0,
+              0,
+              0,
+              1.0
+          ]
+}</pre
+        >
       </code>
       <h4>RGB to Hex</h4>
       <code>
         <pre>/convert/rgb/hex/{r}/{g}/{b}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "hex": "#000000"
+}</pre
+        >
       </code>
       <h4>RGB to RGBA</h4>
       <code>
         <pre>/convert/rgb/rgba/{r}/{g}/{b}/{alpha}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "rgba": [
+              0,
+              0,
+              0,
+              1.0
+          ]
+}</pre
+        >
       </code>
       <h4>RGBA to RGB</h4>
       <code>
         <pre>/convert/rgba/rgb/{r}/{g}/{b}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "rgb": [
+              0,
+              0,
+              0
+          ]
+}</pre
+        >
       </code>
       <h4>RGBA to Hex</h4>
       <code>
         <pre>/convert/rgba/hex/{r}/{g}/{b}/{alpha}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "hex": "#000000"
+}</pre
+        >
       </code>
     </section>
-
     <section>
-      <h3>Random</h3>
+      <h2>Random</h2>
       <h4>Color</h4>
       <code>
         <pre>/random</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "hex": "#9ef6e8",
+          "rgb": [
+              158,
+              246,
+              232
+          ],
+          "rgba": [
+              158,
+              246,
+              232,
+              0.6
+          ]
+}</pre
+        >
       </code>
       <h4>Hex</h4>
       <code>
         <pre>/random/hex</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "hex": "#953650"
+}</pre
+        >
       </code>
       <h4>RGB</h4>
       <code>
         <pre>/random/rgb</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "rgb": [
+              121,
+              124,
+              230
+          ]
+}</pre
+        >
       </code>
       <h4>RGBA</h4>
       <code>
         <pre>/random/rgba</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "rgba": [
+              5,
+              124,
+              253,
+              0.4
+          ]
+}</pre
+        >
       </code>
-      <h4>Color multiple</h4>
+      <h4>Random Multiple</h4>
       <code>
         <pre>/random/{count}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "hex": [
+              "#6d7d5a",
+              "#d05dcb"
+          ],
+          "rgb": [
+              [
+                  109,
+                  125,
+                  90
+              ],
+              [
+                  208,
+                  93,
+                  203
+              ]
+          ],
+          "rgba": [
+              [
+                  109,
+                  125,
+                  90,
+                  0.4
+              ],
+              [
+                  208,
+                  93,
+                  203,
+                  0.7
+              ]
+          ]
+}</pre
+        >
       </code>
-      <h4>Hex multiple</h4>
+      <h4>Hex Multiple</h4>
       <code>
         <pre>/random/hex/{count}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "hex": [
+              "#9f5a11",
+              "#8a349f"
+          ]
+}</pre
+        >
       </code>
-      <h4>RGB multiple</h4>
+      <h4>RGB Multiple</h4>
       <code>
         <pre>/random/rgb/{count}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "rgb": [
+              [
+                  122,
+                  185,
+                  154
+              ],
+              [
+                  234,
+                  205,
+                  125
+              ]
+          ]
+}</pre
+        >
       </code>
-      <h4>RGBA multiple</h4>
+      <h4>RGBA Multiple</h4>
       <code>
         <pre>/random/rgba/{count}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "rgba": [
+              [
+                  223,
+                  125,
+                  116,
+                  0.7
+              ],
+              [
+                  130,
+                  128,
+                  121,
+                  0.6
+              ]
+          ]
+}</pre
+        >
       </code>
     </section>
-
-    <section><h3>Mixer</h3></section>
-
     <section>
-      <h3>Tailwind</h3>
+      <h2>Mixer</h2>
+      <h4>Two RGB</h4>
+      <code>
+        <pre>/mixer/rgb/{r1}/{g1}/{b1}/{r2}/{g2}/{b2}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "rgb": [
+              127,
+              127,
+              127
+          ]
+}</pre
+        >
+      </code>
+      <h4>Two RGBA</h4>
+      <code>
+        <pre>/mixer/rgba/{r1}/{g1}/{b1}/{a1}/{r2}/{g2}/{b2}/{a2}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "rgba": [
+              127,
+              127,
+              127,
+              0.625
+          ]
+}</pre
+        >
+      </code>
+      <h4>Two Hex</h4>
+      <code>
+        <pre>/mixer/hex/{hex1}/{hex2}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "hex": "#7f7f7f"
+}</pre
+        >
+      </code>
+      <h4>Multiple Hex [GET]</h4>
+      <code>
+        <pre>/mixer/hex?color={color1}&color={color2}&color={color3}...</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "hex": "#666666"
+}</pre
+        >
+      </code>
+      <h4>Multiple RGB [GET]</h4>
+      <code>
+        <pre>
+/mixer/rgb?color={r1},{g1},{b1}&color={r2},{g2},{b2}&color={r3},{g3},{b3}...</pre
+        >
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+          {
+            "rgb": [
+                88,
+                88,
+                88
+            ]
+  }</pre
+        >
+      </code>
+      <h4>Multiple RGBA [GET]</h4>
+      <code>
+        <pre>
+/mixer/rgba?color={r1},{g1},{b1},{a1}&color={r2},{g2},{b2},{a2}&color={r3},{g3},{b3},{a3}...</pre
+        >
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+          {
+            "rgb": [
+                88,
+                88,
+                88,
+                1.0
+            ]
+  }</pre
+        >
+      </code>
     </section>
-
     <section>
-      <h3>Material</h3>
+      <h2>Tailwind</h2>
+      <h4>All Colors/Tones</h4>
+      <code>
+        <pre>/tailwind</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+  [all tailwind colors with all tones]
+}
+        </pre>
+      </code>
+      <h4>Specific Color</h4>
+      <code>
+        <pre>/tailwind/{color}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "100": "#ffe4e6",
+          "200": "#fecdd3",
+          "300": "#fda4af",
+          "400": "#fb7185",
+          "50": "#fff1f2",
+          "500": "#f43f5e",
+          "600": "#e11d48",
+          "700": "#be123c",
+          "800": "#9f1239",
+          "900": "#881337",
+          "950": "#4c0519"
+}</pre
+        >
+      </code>
+      <h4>Random</h4>
+      <code>
+        <pre>/tailwind/random</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "100": "#ede9fe",
+          "200": "#ddd6fe",
+          "300": "#c4b5fd",
+          "400": "#a78bfa",
+          "50": "#f5f3ff",
+          "500": "#8b5cf6",
+          "600": "#7c3aed",
+          "700": "#6d28d9",
+          "800": "#5b21b6",
+          "900": "#4c1d95",
+          "950": "#2e1065"
+}</pre
+        >
+      </code>
+      <h4>Random Multiple</h4>
+      <code>
+        <pre>/tailwind/random/{count}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+[
+          {
+              "100": "#ccfbf1",
+              "200": "#99f6e4",
+              "300": "#5eead4",
+              "400": "#2dd4bf",
+              "50": "#f0fdfa",
+              "500": "#14b8a6",
+              "600": "#0d9488",
+              "700": "#0f766e",
+              "800": "#115e59",
+              "900": "#134e4a",
+              "950": "#042f2e"
+    },
+          {
+              "100": "#f1f5f9",
+              "200": "#e2e8f0",
+              "300": "#cbd5e1",
+              "400": "#94a3b8",
+              "50": "#f8fafc",
+              "500": "#64748b",
+              "600": "#475569",
+              "700": "#334155",
+              "800": "#1e293b",
+              "900": "#0f172a",
+              "950": "#020617"
+    }
+      ]</pre
+        >
+      </code>
+      <h4>Random Hex</h4>
+      <code>
+        <pre>/tailwind/random/hex</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "hex": "#c026d3"
+}</pre
+        >
+      </code>
+      <h4>Random RGB</h4>
+      <code>
+        <pre>/tailwind/random/rgb</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "rgb": [
+              196,
+              181,
+              253
+          ]
+}</pre
+        >
+      </code>
+      <h4>Random Hex Multiple</h4>
+      <code>
+        <pre>/tailwind/random/hex/{count}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "hex": [
+              "#ede9fe",
+              "#34d399"
+          ]
+}</pre
+        >
+      </code>
+      <h4>Random RGB Multiple</h4>
+      <code>
+        <pre>/tailwind/random/rgb/{count}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "rgb": [
+              [
+                  133,
+                  77,
+                  14
+              ],
+              [
+                  216,
+                  180,
+                  254
+              ]
+          ]
+}</pre
+        >
+      </code>
+      <h4>Random Gradient with Specific Tone</h4>
+      <code>
+        <pre>/image/random/tailwind/gradient/{tone}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Image</h4>
+      <code>
+        <pre>/image/tailwind/{color}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Random Image</h4>
+      <code>
+        <pre>/image/random/tailwind/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Random with Specific Tone</h4>
+      <code>
+        <pre>/image/random/tailwind/tone/{tone}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
     </section>
-
     <section>
-      <h3>Image</h3>
+      <h2>Material</h2>
+      <h4>All Colors</h4>
+      <code>
+        <pre>/material</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+            [all tailwind colors with all tones]
+}
+        </pre>
+      </code>
+      <h4>Specific Color</h4>
+      <code>
+        <pre>/material/{color}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+    "100": "#ffcdd2",
+    "200": "#ef9a9a",
+    "300": "#e57373",
+    "400": "#ef5350",
+    "50": "#ffebee",
+    "500": "#f44336",
+    "600": "#e53935",
+    "700": "#d32f2f",
+    "800": "#c62828",
+    "900": "#b71c1c",
+    "a100": "#ff8a80",
+    "a200": "#ff5252",
+    "a400": "#ff1744",
+    "a700": "#d50000"
+}</pre
+        >
+      </code>
+      <h4>Random</h4>
+      <code>
+        <pre>/material/random</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "100": "#ffccbc",
+          "200": "#ffab91",
+          "300": "#ff8a65",
+          "400": "#ff7043",
+          "50": "#fbe9e7",
+          "500": "#ff5722",
+          "600": "#f4511e",
+          "700": "#e64a19",
+          "800": "#d84315",
+          "900": "#bf360c",
+          "a100": "#ff9e80",
+          "a200": "#ff6e40",
+          "a400": "#ff3d00",
+          "a700": "#dd2c00"
+}</pre
+        >
+      </code>
+      <h4>Random Multiple</h4>
+      <code>
+        <pre>/material/random/{count}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+[
+          {
+              "100": "#c8e6c9",
+              "200": "#a5d6a7",
+              "300": "#81c784",
+              "400": "#66bb6a",
+              "50": "#e8f5e9",
+              "500": "#4caf50",
+              "600": "#43a047",
+              "700": "#388e3c",
+              "800": "#2e7d32",
+              "900": "#1b5e20",
+              "a100": "#b9f6ca",
+              "a200": "#69f0ae",
+              "a400": "#00e676",
+              "a700": "#00c853"
+    },
+          {
+              "100": "#c5cae9",
+              "200": "#9fa8da",
+              "300": "#7986cb",
+              "400": "#5c6bc0",
+              "50": "#e8eaf6",
+              "500": "#3f51b5",
+              "600": "#3949ab",
+              "700": "#303f9f",
+              "800": "#283593",
+              "900": "#1a237e",
+              "a100": "#8c9eff",
+              "a200": "#536dfe",
+              "a400": "#3d5afe",
+              "a700": "#304ffe"
+    }
+      ]</pre
+        >
+      </code>
+      <h4>Random Hex</h4>
+      <code>
+        <pre>/material/random/hex</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "hex": "#ffca28"
+}</pre
+        >
+      </code>
+      <h4>Random RGB</h4>
+      <code>
+        <pre>/material/random/rgb</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "rgb": [
+              49,
+              27,
+              146
+          ]
+}</pre
+        >
+      </code>
+      <h4>Random Hex Multiple</h4>
+      <code>
+        <pre>/material/random/hex/{count}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "hex": [
+              "#84ffff",
+              "#fff8e1"
+          ]
+}
+      </pre
+        >
+      </code>
+      <h4>Random RGB Multiple</h4>
+      <code>
+        <pre>/material/random/rgb/{count}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output">
+{
+          "rgb": [
+              [
+                  21,
+                  101,
+                  192
+              ],
+              [
+                  129,
+                  199,
+                  132
+              ]
+          ]
+}</pre
+        >
+      </code>
+      <h4>Image</h4>
+      <code>
+        <pre>/image/material/{color}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Gradient</h4>
+      <code>
+        <pre>/image/material/gradient/{color1}/{color2}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Random Image</h4>
+      <code>
+        <pre>/image/material/random/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Random Gradient</h4>
+      <code>
+        <pre>/image/material/random/gradient/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Random Gradient with Specific Tone</h4>
+      <code>
+        <pre>/image/material/random/tone/gradient/{tone}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
     </section>
-
     <section>
-      <h3>Gradient</h3>
+      <h2>Image</h2>
+      <h4>Hex</h4>
+      <code>
+        <pre>/image/hex/{hexCode}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>RGB</h4>
+      <code>
+        <pre>/image/rgb/{r}/{g}/{b}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>RGBA</h4>
+      <code>
+        <pre>/image/rgba/{r}/{g}/{b}/{alpha}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Random</h4>
+      <code>
+        <pre>/image/random/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Random Tailwind</h4>
+      <code>
+        <pre>/image/random/tailwind/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Random Tailwind with Specific Tone</h4>
+      <code>
+        <pre>/image/random/tailwind/tone/{tone}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Hex Gradient</h4>
+      <code>
+        <pre>/image/hex/gradient/{hex1}/{hex2}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Random Gradient</h4>
+      <code>
+        <pre>/image/random/gradient/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Random Tailwind Gradient with Specific Tone</h4>
+      <code>
+        <pre>/image/random/tailwind/gradient/{tone}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Tailwind</h4>
+      <code>
+        <pre>/image/tailwind/{color}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Material</h4>
+      <code>
+        <pre>/image/material/{color}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Material Gradient</h4>
+      <code>
+        <pre>/image/material/gradient/{color1}/{color2}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Material Random</h4>
+      <code>
+        <pre>/image/material/random/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Material Random Gradient</h4>
+      <code>
+        <pre>/image/material/random/gradient/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre class="output"></pre>
+      </code>
+      <h4>Metarial Random Gradient with Specific Tone</h4>
+      <code>
+        <pre>/image/material/random/tone/gradient/{tone}/{w}/{h}</pre>
+        <div><i class="ti ti-switch-vertical"></i></div>
+        <pre
+          class="output"
+        ><img src="https://prismpickerapi.pythonanywhere.com/image/material/random/tone/gradient/200/100/100"></pre>
+      </code>
+    </section>
+    <br />
+    <section>
+      <h3 style="text-align: center; margin-top: 1rem">
+        Made with
+        <i class="ti ti-heart" style="font-size: 1.5rem; margin: 0.1rem"></i>
+        by
+        <a href="https://wwww.dogukanurker.com/" target="_blank"
+          >Doğukan Ürker</a
+        >
+      </h3>
     </section>
     <script src="script.js"></script>
   </body>

@@ -6,6 +6,28 @@ fetch("https://prismpickerapi.pythonanywhere.com/tailwind/random")
     document
       .querySelector('meta[name="theme-color"]')
       .setAttribute("content", data["200"]);
+    const style = document.createElement("style");
+    style.innerHTML = `*::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: ${data["400"]};
+}
+
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-button {
+  background: transparent;
+}
+  *:selection {
+    background-color: ${data["400"]};
+    color: ${data["200"]};
+    }`;
+    const imgElements = document.querySelectorAll("img");
+    imgElements.forEach((img) => {
+      img.style.boxShadow = "4px 4px 6px " + data["700"];
+    });
     const preElements = document.querySelectorAll("pre");
     preElements.forEach((pre) => {
       pre.style.backgroundColor = data["300"];

@@ -71,6 +71,11 @@ p {
   transition: all 0.3s;
 }
 img {
+  width: 100%;
+  height: max-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 0.5rem;
 }
 #github:hover {

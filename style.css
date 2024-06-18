@@ -23,7 +23,7 @@ div {
 }
 body {
   margin: auto;
-  width: 60%;
+  width: 50%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -53,7 +53,16 @@ p {
   font-size: 1.5rem;
   text-align: center;
 }
-
+.titleURL {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  transition: all 0.2s;
+}
+.titleURL:hover {
+  scale: 1.1;
+}
 #github {
   position: absolute;
   right: 15px;
@@ -92,5 +101,12 @@ img {
   }
   h4 {
     font-size: 1.2rem;
+  }
+  #github {
+    top: 0;
+    right: 0;
+  }
+  #github i {
+    font-size: 1rem;
   }
 }

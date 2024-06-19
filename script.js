@@ -7,6 +7,7 @@ fetch("https://prismpickerapi.pythonanywhere.com/tailwind/random")
       .querySelector('meta[name="theme-color"]')
       .setAttribute("content", data["200"]);
     const style = document.createElement("style");
+    document.head.appendChild(style);
     style.innerHTML = `*::-webkit-scrollbar {
   width: 0.4rem;
 }
@@ -20,7 +21,7 @@ fetch("https://prismpickerapi.pythonanywhere.com/tailwind/random")
 *::-webkit-scrollbar-button {
   background: transparent;
 }
-  *:selection {
+  *::selection {
     background-color: ${data["400"]};
     color: ${data["200"]};
     }`;

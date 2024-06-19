@@ -1,117 +1,140 @@
-h1 {
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-h2 {
-  font-size: 3rem;
-  margin-bottom: 2.5rem;
-  padding-top: 0.5rem;
-  text-align: center;
-}
-h4 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-i {
-  font-size: 4rem;
-}
-div {
-  user-select: none !important;
-  width: fit-content;
-  margin: 1rem auto;
-}
-body {
-  margin: auto;
-  width: 50%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-button {
-  width: fit-content;
-  margin: 2rem auto;
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-pre {
-  font-size: 1.1rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  overflow-x: auto;
-}
 a {
-  text-decoration: none;
-  color: inherit;
+	color: inherit;
+	text-decoration: none;
+}
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	margin: auto;
+	width: 50%;
+}
+
+button {
+	border-radius: 0.5rem;
+	border: none;
+	cursor: pointer;
+	font-size: 2rem;
+	margin: 2rem auto;
+	padding: 0.5rem 1rem;
+	transition: all 0.3s;
+	width: fit-content;
+}
+
+div {
+	margin: 1rem auto;
+	user-select: none !important;
+	width: fit-content;
+}
+
+h1 {
+	font-size: 4rem;
+	margin-bottom: 0.5rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 3rem;
+	margin-bottom: 2.5rem;
+	padding-top: 0.5rem;
+	text-align: center;
+}
+
+h4 {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+i {
+	font-size: 4rem;
+}
+
+img {
+	border-radius: 0.5rem;
+	display: block;
+	height: max-content;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
 
 p {
-  margin-top: 0;
-  font-size: 1.5rem;
-  text-align: center;
+	font-size: 1.5rem;
+	margin-top: 0;
+	text-align: center;
 }
-.titleURL {
-  display: block;
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 0.5rem;
-  transition: all 0.2s;
+
+pre {
+	border-radius: 0.5rem;
+	font-size: 1.1rem;
+	overflow-x: auto;
+	padding: 1rem;
 }
-.titleURL:hover {
-  scale: 1.1;
-}
+
 #github {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  font-size: 3rem;
-  transition: all 0.3s;
+	font-size: 3rem;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	transition: all 0.3s;
 }
-img {
-  width: 100%;
-  height: max-content;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 0.5rem;
-}
+
 #github:hover {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
-.outputArrow {
-  font-size: 2rem !important;
-}
+
 .output {
-  margin: auto;
-  margin-bottom: 5rem;
+	margin-bottom: 5rem;
+	margin: auto;
 }
+
+.outputArrow {
+	font-size: 2rem !important;
+}
+
+.titleURL {
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin: 0.5rem;
+	text-align: center;
+	transition: all 0.2s;
+}
+
+.titleURL:hover {
+	scale: 1.1;
+}
+
 @media screen and (max-width: 768px) {
-  body {
-    width: 96%;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-  button {
-    font-size: 1.5rem;
-  }
-  p {
-    font-size: 1.2rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  h4 {
-    font-size: 1.2rem;
-  }
-  #github {
-    top: 0;
-    right: 0;
-  }
-  #github i {
-    font-size: 1rem;
-  }
+	body {
+		width: 96%;
+	}
+
+	button {
+		font-size: 1.5rem;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	h4 {
+		font-size: 1.2rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+
+	#github {
+		right: 0;
+		top: 0;
+	}
+
+	#github i {
+		font-size: 1rem;
+	}
 }

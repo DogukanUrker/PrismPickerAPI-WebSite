@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/1.35.0/iconfont/tabler-icons.min.css"
-      integrity="sha512-tpsEzNMLQS7w9imFSjbEOHdZav3/aObSESAL1y5jyJDoICFF2YwEdAHOPdOr1t+h8hTzar0flphxR76pd0V1zQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.46.0/tabler-icons.min.css"
     />
   </head>
   <body>
@@ -24,6 +21,7 @@
     >
       <i class="ti ti-brand-github"></i>
     </a>
+    <button id="roll"><i class="ti ti-sparkles"></i></button>
     <section>
       <h2>Table of Contents</h2>
       <a href="#api" class="titleURL">API</a>
@@ -38,7 +36,7 @@
       <h2>API</h2>
       <code>
         <pre>https://prismpickerapi.pythonanywhere.com/</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre>
 {
       "Message": "Welcome to the Prism Picker API!"
@@ -51,7 +49,7 @@
       <h4>Hex to RGB</h4>
       <code>
         <pre>/convert/hex/rgb/{hexCode}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "rgb": [
@@ -65,7 +63,7 @@
       <h4>Hex to RGBA</h4>
       <code>
         <pre>/convert/hex/rgba/{hexCode}/{alpha}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "rgba": [
@@ -80,7 +78,7 @@
       <h4>RGB to Hex</h4>
       <code>
         <pre>/convert/rgb/hex/{r}/{g}/{b}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "hex": "#000000"
@@ -90,7 +88,7 @@
       <h4>RGB to RGBA</h4>
       <code>
         <pre>/convert/rgb/rgba/{r}/{g}/{b}/{alpha}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "rgba": [
@@ -105,7 +103,7 @@
       <h4>RGBA to RGB</h4>
       <code>
         <pre>/convert/rgba/rgb/{r}/{g}/{b}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "rgb": [
@@ -119,7 +117,7 @@
       <h4>RGBA to Hex</h4>
       <code>
         <pre>/convert/rgba/hex/{r}/{g}/{b}/{alpha}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "hex": "#000000"
@@ -132,7 +130,7 @@
       <h4>Color</h4>
       <code>
         <pre>/random</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "hex": "#9ef6e8",
@@ -153,7 +151,7 @@
       <h4>Hex</h4>
       <code>
         <pre>/random/hex</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "hex": "#953650"
@@ -163,7 +161,7 @@
       <h4>RGB</h4>
       <code>
         <pre>/random/rgb</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "rgb": [
@@ -177,7 +175,7 @@
       <h4>RGBA</h4>
       <code>
         <pre>/random/rgba</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "rgba": [
@@ -192,7 +190,7 @@
       <h4>Multiple</h4>
       <code>
         <pre>/random/{count}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "hex": [
@@ -231,7 +229,7 @@
       <h4>Hex Multiple</h4>
       <code>
         <pre>/random/hex/{count}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "hex": [
@@ -244,7 +242,7 @@
       <h4>RGB Multiple</h4>
       <code>
         <pre>/random/rgb/{count}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "rgb": [
@@ -265,7 +263,7 @@
       <h4>RGBA Multiple</h4>
       <code>
         <pre>/random/rgba/{count}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "rgba": [
@@ -291,7 +289,7 @@
       <h4>Two RGB</h4>
       <code>
         <pre>/mixer/rgb/{r1}/{g1}/{b1}/{r2}/{g2}/{b2}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "rgb": [
@@ -305,7 +303,7 @@
       <h4>Two RGBA</h4>
       <code>
         <pre>/mixer/rgba/{r1}/{g1}/{b1}/{a1}/{r2}/{g2}/{b2}/{a2}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "rgba": [
@@ -320,7 +318,7 @@
       <h4>Two Hex</h4>
       <code>
         <pre>/mixer/hex/{hex1}/{hex2}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "hex": "#7f7f7f"
@@ -330,7 +328,7 @@
       <h4>Multiple Hex [GET]</h4>
       <code>
         <pre>/mixer/hex?color={color1}&color={color2}&color={color3}...</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "hex": "#666666"
@@ -342,7 +340,7 @@
         <pre>
 /mixer/rgb?color={r1},{g1},{b1}&color={r2},{g2},{b2}&color={r3},{g3},{b3}...</pre
         >
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
           {
             "rgb": [
@@ -358,7 +356,7 @@
         <pre>
 /mixer/rgba?color={r1},{g1},{b1},{a1}&color={r2},{g2},{b2},{a2}&color={r3},{g3},{b3},{a3}...</pre
         >
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
           {
             "rgb": [
@@ -376,7 +374,7 @@
       <h4>All Colors/Tones</h4>
       <code>
         <pre>/tailwind</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
   [all tailwind colors with all tones]
@@ -386,7 +384,7 @@
       <h4>Specific Color</h4>
       <code>
         <pre>/tailwind/{color}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "100": "#ffe4e6",
@@ -406,7 +404,7 @@
       <h4>Random</h4>
       <code>
         <pre>/tailwind/random</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "100": "#ede9fe",
@@ -426,7 +424,7 @@
       <h4>Random Multiple</h4>
       <code>
         <pre>/tailwind/random/{count}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 [
           {
@@ -461,7 +459,7 @@
       <h4>Random Hex</h4>
       <code>
         <pre>/tailwind/random/hex</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "hex": "#c026d3"
@@ -471,7 +469,7 @@
       <h4>Random RGB</h4>
       <code>
         <pre>/tailwind/random/rgb</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "rgb": [
@@ -485,7 +483,7 @@
       <h4>Random Hex Multiple</h4>
       <code>
         <pre>/tailwind/random/hex/{count}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "hex": [
@@ -498,7 +496,7 @@
       <h4>Random RGB Multiple</h4>
       <code>
         <pre>/tailwind/random/rgb/{count}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "rgb": [
@@ -519,7 +517,7 @@
       <h4>Random Gradient with Specific Tone</h4>
       <code>
         <pre>/image/random/tailwind/gradient/{tone}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/tailwind/indigo/500/500/200"
         />
@@ -527,7 +525,7 @@
       <h4>Image</h4>
       <code>
         <pre>/image/tailwind/{color}/{tone}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/tailwind/rose/500/500/200"
         />
@@ -535,7 +533,7 @@
       <h4>Random Image</h4>
       <code>
         <pre>/image/random/tailwind/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/random/tailwind/500/200"
         />
@@ -543,7 +541,7 @@
       <h4>Random with Specific Tone</h4>
       <code>
         <pre>/image/random/tailwind/tone/{tone}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/random/tailwind/tone/500/500/200"
         />
@@ -554,7 +552,7 @@
       <h4>All Colors</h4>
       <code>
         <pre>/material</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
             [all tailwind colors with all tones]
@@ -564,7 +562,7 @@
       <h4>Specific Color</h4>
       <code>
         <pre>/material/{color}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
     "100": "#ffcdd2",
@@ -587,7 +585,7 @@
       <h4>Random</h4>
       <code>
         <pre>/material/random</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "100": "#ffccbc",
@@ -610,7 +608,7 @@
       <h4>Random Multiple</h4>
       <code>
         <pre>/material/random/{count}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 [
           {
@@ -651,7 +649,7 @@
       <h4>Random Hex</h4>
       <code>
         <pre>/material/random/hex</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "hex": "#ffca28"
@@ -661,7 +659,7 @@
       <h4>Random RGB</h4>
       <code>
         <pre>/material/random/rgb</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "rgb": [
@@ -675,7 +673,7 @@
       <h4>Random Hex Multiple</h4>
       <code>
         <pre>/material/random/hex/{count}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "hex": [
@@ -689,7 +687,7 @@
       <h4>Random RGB Multiple</h4>
       <code>
         <pre>/material/random/rgb/{count}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <pre class="output">
 {
           "rgb": [
@@ -710,7 +708,7 @@
       <h4>Image</h4>
       <code>
         <pre>/image/material/{color}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/material/deeppurple/500/200"
         />
@@ -718,7 +716,7 @@
       <h4>Gradient</h4>
       <code>
         <pre>/image/material/gradient/{color1}/{color2}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
 
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/material/gradient/purple/deeppurple/500/200"
@@ -727,7 +725,7 @@
       <h4>Random Image</h4>
       <code>
         <pre>/image/material/random/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/material/random/500/200"
         />
@@ -735,7 +733,7 @@
       <h4>Random Gradient</h4>
       <code>
         <pre>/image/material/random/gradient/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/material/random/gradient/500/200"
         />
@@ -743,7 +741,7 @@
       <h4>Random Gradient with Specific Tone</h4>
       <code>
         <pre>/image/material/random/tone/gradient/{tone}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/material/random/tone/gradient/200/500/200"
         />
@@ -754,7 +752,7 @@
       <h4>Hex</h4>
       <code>
         <pre>/image/hex/{hexCode}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/hex/171717/500/200"
         />
@@ -762,7 +760,7 @@
       <h4>RGB</h4>
       <code>
         <pre>/image/rgb/{r}/{g}/{b}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/rgb/150/150/150/500/200"
         />
@@ -770,7 +768,7 @@
       <h4>Random</h4>
       <code>
         <pre>/image/random/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/random/500/200"
         />
@@ -778,7 +776,7 @@
       <h4>Random Tailwind</h4>
       <code>
         <pre>/image/random/tailwind/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/random/tailwind/500/200"
         />
@@ -786,7 +784,7 @@
       <h4>Random Tailwind with Specific Tone</h4>
       <code>
         <pre>/image/random/tailwind/tone/{tone}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/random/tailwind/tone/500/500/200"
         />
@@ -794,7 +792,7 @@
       <h4>Hex Gradient</h4>
       <code>
         <pre>/image/hex/gradient/{hex1}/{hex2}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/hex/gradient/84ffff/fff8e1/500/200"
         />
@@ -802,7 +800,7 @@
       <h4>Random Gradient</h4>
       <code>
         <pre>/image/random/gradient/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/random/gradient/500/200"
         />
@@ -810,7 +808,7 @@
       <h4>Random Tailwind Gradient with Specific Tone</h4>
       <code>
         <pre>/image/random/tailwind/gradient/{tone}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/random/tailwind/gradient/500/500/200"
         />
@@ -818,7 +816,7 @@
       <h4>Tailwind</h4>
       <code>
         <pre>/image/tailwind/{color}/{tone}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/tailwind/rose/500/500/200"
         />
@@ -826,7 +824,7 @@
       <h4>Tailwind with Specific Tone</h4>
       <code>
         <pre>/image/tailwind/{color}/{tone}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/tailwind/indigo/500/500/200"
         />
@@ -834,7 +832,7 @@
       <h4>Material</h4>
       <code>
         <pre>/image/material/{color}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/material/deeppurple/500/200"
         />
@@ -842,7 +840,7 @@
       <h4>Material Gradient</h4>
       <code>
         <pre>/image/material/gradient/{color1}/{color2}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/material/gradient/purple/deeppurple/500/200"
         />
@@ -850,7 +848,7 @@
       <h4>Material Random</h4>
       <code>
         <pre>/image/material/random/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/material/random/500/200"
         />
@@ -858,7 +856,7 @@
       <h4>Material Random Gradient</h4>
       <code>
         <pre>/image/material/random/gradient/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/material/random/gradient/500/200"
         />
@@ -866,7 +864,7 @@
       <h4>Metarial Random Gradient with Specific Tone</h4>
       <code>
         <pre>/image/material/random/tone/gradient/{tone}/{w}/{h}</pre>
-        <div><i class="ti ti-switch-vertical"></i></div>
+        <div><i class="ti ti-arrow-narrow-down"></i></div>
         <img
           src="https://prismpickerapi.pythonanywhere.com/image/material/random/tone/gradient/200/500/200"
         />

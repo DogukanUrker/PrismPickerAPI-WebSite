@@ -6,8 +6,8 @@ fetch("https://prismpickerapi.pythonanywhere.com/tailwind/random")
     // Create a new <style> element
     const style = document.createElement("style");
 
-    // Set the body's text color using the '500' shade from the palette
-    document.body.style.color = data["500"];
+    // Set the body's text color using the '700' shade from the palette
+    document.body.style.color = data["700"];
     // Set the body's background color using the '200' shade from the palette
     document.body.style.backgroundColor = data["200"];
 
@@ -46,19 +46,19 @@ fetch("https://prismpickerapi.pythonanywhere.com/tailwind/random")
     // Add mouseover and mouseout event listeners to the 'github' element
     github.addEventListener(
       "mouseover",
-      () => (github.style.color = data["700"]) // Change color on mouseover
+      () => (github.style.color = data["800"]) // Change color on mouseover
     );
     github.addEventListener(
       "mouseout",
-      () => (github.style.color = data["600"]) // Revert color on mouseout
+      () => (github.style.color = data["700"]) // Revert color on mouseout
     );
 
     // Add mouseover and mouseout event listeners to the 'roll' element
-    roll.addEventListener("mouseover", () => (roll.style.color = data["700"])); // Change color on mouseover
-    roll.addEventListener("mouseout", () => (roll.style.color = data["600"])); // Revert color on mouseout
+    roll.addEventListener("mouseover", () => (roll.style.color = data["800"])); // Change color on mouseover
+    roll.addEventListener("mouseout", () => (roll.style.color = data["700"])); // Revert color on mouseout
 
     // Set the initial color of the 'roll' element
-    roll.style.color = data["500"];
+    roll.style.color = data["700"];
   })
   .catch(console.error); // Log any errors that occur during the fetch or processing
 
